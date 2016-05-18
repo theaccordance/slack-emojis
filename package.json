@@ -1,0 +1,19 @@
+{
+  "name": "slack-emojis",
+  "version": "0.1.0",
+  "description": "slack emojis ",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theaccordance/slack-emojis.git"
+  },
+  "author": "Joe Mainwaring <jm@theaccordance.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theaccordance/slack-emojis/issues"
+  },
+  "homepage": "https://github.com/theaccordance/slack-emojis#readme"
+}

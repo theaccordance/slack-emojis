@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/theaccordance/slack-emojis#readme",
   "devDependencies": {
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "load-grunt-tasks": "^3.5.0"
   }
 }

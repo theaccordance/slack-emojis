@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/theaccordance/slack-emojis/issues"
   },
-  "homepage": "https://github.com/theaccordance/slack-emojis#readme"
+  "homepage": "https://github.com/theaccordance/slack-emojis#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
 }

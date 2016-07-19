@@ -50,3 +50,9 @@ footer {
 .emoji-code:before, .emoji-code:after {
     content: ":"
 }
+
+@media (min-width: 768px) {
+    .title > img, .title > h1  {
+        display: inline-block
+    }
+}

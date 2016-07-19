@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Slack Emojis</title>
+
+		<link href="assets/favicon-32.png" rel="icon" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="col-xs-12 col-sm-6">
+					<img src="assets/slack-logo.png"/>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<h1>Slack Emojis</h1>
+					<p>A curated selection of emojis to use in your slack teams.</p>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<% _.forEach(grunt.config('emojis'), function (emoji) { %>
+				<div class="col-xs-12 col-sm-3">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="media">
+								<div class="media-left">
+									<img class="media-object" src="emojis/<%- emoji.src %>" />
+								</div>
+								<div class="media-body">
+									<h4 class="emoji-name"><%- emoji.name %></h4>
+									<span class="emoji-code"><%- emoji.name %></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<% }); %>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="col-sm-12">
+					&copy; Joe Mainwaring.
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

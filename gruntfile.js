@@ -32,8 +32,8 @@ function init(grunt) {
     }
     loadGrunt();
 
-    function build() {
-		var emojis = []
+    function getData() {
+		var emojis = [];
 		grunt.file.expand({filter: 'isFile'},'emojis/**').forEach(function (filePath) {
 			emojis.push({
 				name:  filePath.split('/').pop().split('.')[0],
@@ -42,10 +42,12 @@ function init(grunt) {
 		});
 		console.log(emojis);
 		grunt.config('emojis', emojis);
-		grunt.task.run('copy');
 	}
 
-	 grunt.registerTask('default', build);
+    grunt.registerTask('getData', getData);
+    grunt.registerTask('build', ['getData', 'clean', 'copy:emojis', 'copy:public', 'copy:index']);
+    grunt.registerTask('serve', ['build', 'connect', 'watch']);
+
 }
 
 module.exports = init;

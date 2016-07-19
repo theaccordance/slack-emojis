@@ -1,0 +1,21 @@
+{
+  "name": "slack-emojis",
+  "description": "slack emojis",
+  "main": "gruntfile.js",
+  "authors": [
+    "Joe Mainwaring <jm@theaccordance.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://joemainwaring.com/slack-emojis",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
